@@ -1,10 +1,10 @@
 import axios from 'axios';
 import toast from 'react-hot-toast';
 
-// DYNAMIC BASE URL FIX:
-// Automatically uses 'localhost' on PC, and your local network IP when testing on mobile.
+// Automatically uses your deployed backend URL from the .env file.
+// Falls back to local network IP for local development if the .env variable is missing.
 const api = axios.create({
-  baseURL: `http://${window.location.hostname}:5000/api`, 
+  baseURL: import.meta.env.VITE_API_URL || `http://${window.location.hostname}:5000/api`, 
 });
 
 // Attach Token to every request
