@@ -604,7 +604,7 @@ export default function SplashScreen() {
         <div className="max-w-[1400px] mx-auto border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-bold tracking-wide text-slate-600 uppercase">
           <p>© {new Date().getFullYear()} National Institute of Nutrition, ICMR. All rights reserved.</p>
           <p className="flex items-center gap-1">
-            System Demonstration Portal <span className="mx-2">|</span> Developed by <span className="text-blue-400 ml-1">Mohammad Sameer</span>
+            System Demonstration Portal <span className="mx-2">|</span> 
           </p>
         </div>
       </footer>
